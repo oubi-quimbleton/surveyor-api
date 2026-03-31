@@ -1,0 +1,19 @@
+name: Surveyor
+main: org.monolith.surveyor.Surveyor
+version: 1.0.0
+api-version: '1.21'
+author: Monolith
+description: World/deed restoration API for other plugins.
+load: STARTUP
+
+provides: [SurveyorAPI]
+
+commands:
+  restorechunk:
+    description: Temporarily restores the chunk you're standing in.
+    usage: /restorechunk
+    permission: surveyor.restore
+
+permissions:
+  surveyor.restore:
+    default: op

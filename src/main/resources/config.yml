@@ -1,0 +1,4 @@
+version: 1
+
+logging:
+  chunk-restore: false
