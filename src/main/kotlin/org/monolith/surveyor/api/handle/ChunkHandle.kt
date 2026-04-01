@@ -1,5 +1,6 @@
 package org.monolith.surveyor.api.handle
 
+import org.monolith.surveyor.api.ChunkCoordinate
 import org.monolith.surveyor.api.WorldId
 
 /**
@@ -9,6 +10,5 @@ import org.monolith.surveyor.api.WorldId
  */
 interface ChunkHandle {
     val worldId: WorldId?
-    val x: Int
-    val z: Int
+    val coordinate: ChunkCoordinate
 }

@@ -1,5 +1,6 @@
 package org.monolith.surveyor.api.access
 
+import org.monolith.surveyor.api.ChunkCoordinate
 import org.monolith.surveyor.api.handle.ChunkHandle
 import org.monolith.surveyor.api.WorldId
 
@@ -14,10 +15,9 @@ interface ChunkAccess {
      * Reads a chunk's raw representation from the given world.
      *
      * @param worldId Logical identifier for the world (implementation-defined).
-     * @param chunkX Chunk X coordinate.
-     * @param chunkZ Chunk Z coordinate.
+     * @param coordinate Chunk coordinate.
      */
-    fun readChunk(worldId: WorldId, chunkX: Int, chunkZ: Int): ChunkHandle?
+    fun readChunk(worldId: WorldId, coordinate: ChunkCoordinate): ChunkHandle?
 
     /**
      * Writes a chunk into the given world.
