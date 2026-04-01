@@ -1,10 +1,10 @@
-package org.monolith.surveyor.listeners
+package org.monolith.surveyor.legacy.listeners
 
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.server.ServerLoadEvent
-import org.monolith.surveyor.api.SurveyorAPI
+import org.monolith.surveyor.legacy.api.SurveyorAPI
 
 internal class ServerListener(
     private val api: SurveyorAPI

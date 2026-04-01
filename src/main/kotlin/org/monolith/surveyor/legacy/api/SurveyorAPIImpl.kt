@@ -1,12 +1,12 @@
-package org.monolith.surveyor.api
+package org.monolith.surveyor.legacy.api
 
 import org.bukkit.Chunk
 import org.bukkit.Location
 import org.bukkit.World
 import org.bukkit.block.Block
-import org.monolith.surveyor.deed.DeedManager
-import org.monolith.surveyor.deed.DeedSealer
-import org.monolith.surveyor.restore.RestoreManager
+import org.monolith.surveyor.legacy.deed.DeedManager
+import org.monolith.surveyor.legacy.deed.DeedSealer
+import org.monolith.surveyor.legacy.restore.RestoreManager
 
 internal class SurveyorAPIImpl(
     private val deedManager: DeedManager,

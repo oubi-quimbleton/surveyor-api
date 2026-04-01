@@ -1,4 +1,4 @@
-package org.monolith.surveyor.restore.block
+package org.monolith.surveyor.legacy.restore.block
 
 import net.kyori.adventure.text.Component
 import org.bukkit.block.*

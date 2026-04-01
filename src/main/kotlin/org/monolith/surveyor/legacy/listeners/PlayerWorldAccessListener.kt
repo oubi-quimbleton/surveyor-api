@@ -1,4 +1,4 @@
-package org.monolith.surveyor.listeners
+package org.monolith.surveyor.legacy.listeners
 
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener

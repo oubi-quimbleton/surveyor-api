@@ -1,4 +1,4 @@
-package org.monolith.surveyor.restore.entity
+package org.monolith.surveyor.legacy.restore.entity
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Chunk

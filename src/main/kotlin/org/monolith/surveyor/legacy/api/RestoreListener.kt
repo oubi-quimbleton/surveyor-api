@@ -1,4 +1,4 @@
-package org.monolith.surveyor.api
+package org.monolith.surveyor.legacy.api
 
 import org.bukkit.Chunk
 

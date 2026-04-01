@@ -1,16 +1,17 @@
-package org.monolith.surveyor
+package org.monolith.surveyor.legacy
 
 import org.bukkit.Bukkit
 import org.bukkit.command.Command
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
+import org.bukkit.plugin.ServicePriority
 import org.bukkit.plugin.java.JavaPlugin
-import org.monolith.surveyor.api.SurveyorAPI
-import org.monolith.surveyor.api.SurveyorAPIImpl
-import org.monolith.surveyor.deed.DeedManager
-import org.monolith.surveyor.deed.DeedSealer
-import org.monolith.surveyor.listeners.PlayerWorldAccessListener
-import org.monolith.surveyor.listeners.ServerListener
+import org.monolith.surveyor.legacy.api.SurveyorAPI
+import org.monolith.surveyor.legacy.api.SurveyorAPIImpl
+import org.monolith.surveyor.legacy.deed.DeedManager
+import org.monolith.surveyor.legacy.deed.DeedSealer
+import org.monolith.surveyor.legacy.listeners.PlayerWorldAccessListener
+import org.monolith.surveyor.legacy.listeners.ServerListener
 
 class Surveyor : JavaPlugin() {
 
@@ -33,7 +34,7 @@ class Surveyor : JavaPlugin() {
             SurveyorAPI::class.java,
             apiImpl,
             this,
-            org.bukkit.plugin.ServicePriority.Normal
+            ServicePriority.Normal
         )
 
         // Register server load listener so deeds get created after the server loads

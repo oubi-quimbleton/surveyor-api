@@ -1,4 +1,4 @@
-package org.monolith.surveyor.restore
+package org.monolith.surveyor.legacy.restore
 
 import org.bukkit.Chunk
 import org.bukkit.Location
@@ -6,9 +6,9 @@ import org.bukkit.Material
 import org.bukkit.World
 import org.bukkit.block.Block
 import org.bukkit.block.TileState
-import org.monolith.surveyor.api.RestoreListener
-import org.monolith.surveyor.restore.block.BlockEntityRestorer
-import org.monolith.surveyor.restore.entity.EntityRestorer
+import org.monolith.surveyor.legacy.api.RestoreListener
+import org.monolith.surveyor.legacy.restore.block.BlockEntityRestorer
+import org.monolith.surveyor.legacy.restore.entity.EntityRestorer
 import kotlin.system.measureTimeMillis
 
 internal class RestoreManager(

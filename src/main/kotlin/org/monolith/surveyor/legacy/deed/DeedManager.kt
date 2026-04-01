@@ -1,4 +1,4 @@
-package org.monolith.surveyor.deed
+package org.monolith.surveyor.legacy.deed
 
 import org.bukkit.Bukkit
 import org.bukkit.World

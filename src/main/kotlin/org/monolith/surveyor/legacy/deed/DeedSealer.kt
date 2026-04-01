@@ -1,4 +1,4 @@
-package org.monolith.surveyor.deed
+package org.monolith.surveyor.legacy.deed
 
 import org.bukkit.GameRule
 import org.bukkit.World
