@@ -1,10 +1,7 @@
 plugins {
     kotlin("jvm") version "2.3.10"
     id("com.gradleup.shadow") version "8.3.0"
-    id("xyz.jpenilla.run-paper") version "2.3.1" // optional but useful
-
-    // id("io.papermc.paperweight.userdev") version "1.7.1"
-    // ↑ Uncomment if Surveyor ever needs NMS access
+    id("xyz.jpenilla.run-paper") version "2.3.1" // optional for testing
 }
 
 group = property("group")!!
@@ -16,14 +13,17 @@ repositories {
 }
 
 dependencies {
+    // Paper API (compileOnly because Surveyor is platform-agnostic)
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
 
-    // Adventure API (recommended for TileState name handling)
+    // Kyori Adventure (API + NBT)
     implementation("net.kyori:adventure-api:4.17.0")
     implementation("net.kyori:adventure-text-minimessage:4.17.0")
+    implementation("net.kyori:adventure-nbt:4.17.0")
 
-    // paperweight.paperDevBundle("1.21.1-R0.1-SNAPSHOT")
-    // ↑ Uncomment if you need NMS access later
+    // (Optional) Logging for debugging
+    implementation("org.slf4j:slf4j-api:2.0.13")
+    runtimeOnly("org.slf4j:slf4j-simple:2.0.13")
 }
 
 val targetJavaVersion = 21
