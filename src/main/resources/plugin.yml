@@ -1,5 +1,5 @@
 name: Surveyor
-main: org.monolith.surveyor.Surveyor
+main: org.monolith.surveyor.legacy.Surveyor
 version: 1.0.0
 api-version: '1.21'
 author: Monolith
